@@ -1,7 +1,12 @@
 *,
-::before,
-::after {
+::after,
+::before {
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 html {
     font-size: 62.5%;
@@ -9,4 +14,24 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
+    color: var(--text-color);
+    background: var(--body-bg);
+}
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+img,
+a,
+button,
+textarea,
+input,
+select {
+    font-family: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent; }
+
+.icon {
+    filter: var(--icon-color);
 }
